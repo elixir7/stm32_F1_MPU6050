@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"f1_mpu9250\startup_stm32f103xb.o"
+"f1_mpu9250\main.o"
+"f1_mpu9250\stm32f1xx_it.o"
+"f1_mpu9250\stm32f1xx_hal_msp.o"
+"f1_mpu9250\madgwickahrs.o"
+"f1_mpu9250\mpu9250.o"
+"f1_mpu9250\tj_mpu6050.o"
+"f1_mpu9250\stm32f1xx_hal_gpio_ex.o"
+"f1_mpu9250\stm32f1xx_hal_i2c.o"
+"f1_mpu9250\stm32f1xx_hal_tim.o"
+"f1_mpu9250\stm32f1xx_hal_tim_ex.o"
+"f1_mpu9250\stm32f1xx_hal_uart.o"
+"f1_mpu9250\stm32f1xx_hal.o"
+"f1_mpu9250\stm32f1xx_hal_rcc.o"
+"f1_mpu9250\stm32f1xx_hal_rcc_ex.o"
+"f1_mpu9250\stm32f1xx_hal_gpio.o"
+"f1_mpu9250\stm32f1xx_hal_dma.o"
+"f1_mpu9250\stm32f1xx_hal_cortex.o"
+"f1_mpu9250\stm32f1xx_hal_pwr.o"
+"f1_mpu9250\stm32f1xx_hal_flash.o"
+"f1_mpu9250\stm32f1xx_hal_flash_ex.o"
+"f1_mpu9250\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "F1_MPU9250\F1_MPU9250.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "F1_MPU9250.map" -o F1_MPU9250\F1_MPU9250.axf
